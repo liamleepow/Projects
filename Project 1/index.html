@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script defer src="./js/script.js"></script>
+    <link defer rel="stylesheet" href="css/style.css">
+    <link defer href="https://fonts.googleapis.com/css?family=Arima+Madurai|Creepster&display=swap" rel="stylesheet">
+    <title>Rick and Morty</title>
+</head>
+<header>Amazing World of Rick and Morty</header>
+
+<nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo right">Rick and Morty</a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="https://www.adultswim.com/videos/rick-and-morty/">Official Website of Rick and Morty</a></li>
+            <li><a href="https://www.hulu.com/series/rick-and-morty-d76d6361-3fbf-4842-8dd7-e05520557280?cmp=7958&utm_source=bing&utm_medium=cpc&utm_campaign=BM%20Search%20TV%20Shows&utm_term=rick%20and%20morty&msclkid=8ad4f49cef7f15260599a974b59d1fd8&gclid=CJTwiaqrneYCFZLzswodYasKLQ&gclsrc=ds">Watch Episodes</a></li>
+            <li><a href="https://www.republicworld.com/entertainment-news/television-news/rick-and-morty-is-considered-a-unique-intelligent-animated-series.html">New to Rick and Morty</a></li>
+          </ul>
+        </div>
+      </nav>   
+<header2>
+    <div class="iframe-container">
+            <video id="myVideo" width="750" height="350">
+                    <source src="https://www.youtube.com/embed/wh10k2LPZiI?autoplay=1" type="video">
+                </video>
+                <button id="playButton">Play/Pause</button>
+                <script type="text/javascript">
+                    var myVideo = document.getElementById('myVideo');
+                    var playButton = document.getElementById('playButton');
+        
+                    playButton.addEventListener('click', function () {
+                        if (myVideo.paused) {
+                            if (myVideo.requestFullscreen) {
+                                myVideo.requestFullscreen();
+                            }
+                            else if (myVideo.msRequestFullscreen) {
+                                myVideo.msRequestFullscreen();
+                            }
+                            else if (myVideo.mozRequestFullScreen) {
+                                myVideo.mozRequestFullScreen();
+                            }
+                            else if (myVideo.webkitRequestFullScreen) {
+                                myVideo.webkitRequestFullScreen();
+                            }
+                            myVideo.play();
+                        }
+                        else {
+                            myVideo.pause();
+                        }
+                    }, false);
+                    </script>        
+</div>
+</header2>
+<body>
+    <h1></h1>
+    <h2></h2>
+    <dl>
+        <dt>Character</dt>
+        <dd id="Character"></dd>
+        <dt>Status</dt>
+        <dd id="Status"></dd>
+        <dt>Species</dt>
+        <dd id="Species"></dd>
+        <dt>Type</dt>
+        <dd id="Type"></dd>
+        <dt>Gender</dt>
+        <dd id="Gender"></dd>
+    </dl>
+    <form>
+        <input type="text" placeholder="Place Number 1-493" />
+        <input type="submit" value="Get Character Info" />
+    </form>
+</body>
+
+</html>

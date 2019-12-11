@@ -1,0 +1,54 @@
+/*nav{
+font-family: 'Times New Roman', Times, serif;
+padding: 20px;
+color: black;
+}
+*/
+     
+  body {
+    font-family: Tahoma, Geneva, sans-serif;
+    height: 100vh; 
+    margin: 0;
+    display: grid;
+    grid-template-rows: 3rem auto; 
+    color: white;
+  }
+     
+     
+  nav a {
+    line-height: 3rem;
+    padding: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+  }
+     
+  header{  
+    text-align: center;
+    padding: 200px;
+    font-family: 'Creepster', cursive;
+    font-size: xx-large;
+    color: blanchedalmond;
+  }
+
+body{
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(21,121,9,1) 35%, rgba(7,255,0,0.9569187538296568) 100%);
+    text-align: center;
+    color: white;
+    font-family:'Arima Madurai', cursive;;
+    font-size: large;
+    padding: 200px;
+}
+
+
+iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+
+  
+
+
